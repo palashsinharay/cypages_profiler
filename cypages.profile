@@ -112,6 +112,11 @@ function cypages_profile_tasks(&$task, $url) {
     node_type_save($type);
   }
 
+  // Enable default theme
+  drupal_system_enable('theme', 'omega');
+  variable_set('theme_default', 'omega');
+
+
   // Default page to not be promoted and have comments disabled.
   variable_set('node_options_page', array('status'));
   variable_set('comment_page', COMMENT_NODE_DISABLED);
