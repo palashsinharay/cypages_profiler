@@ -20,7 +20,7 @@ function cypages_profile_modules() {
  */
 function cypages_profile_details() {
   return array(
-    'name' => 'Drupal',
+    'name' => 'cypages',
     'description' => 'Select this profile to enable some basic Drupal functionality and the default theme.'
   );
 }
