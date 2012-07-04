@@ -7,7 +7,7 @@
  *   An array of modules to enable.
  */
 function cypages_profile_modules() {
-  return array('color', 'comment', 'help', 'menu', 'taxonomy', 'dblog','contactus','wizpage','ckeditor');
+  return array('color', 'comment', 'help', 'menu', 'taxonomy', 'dblog','contactus','wizpage');
 }
 
 /**
@@ -159,7 +159,7 @@ $link = array('menu_name' => 'primary-links', 'link_path' => 'logout', 'link_tit
 
 db_query("INSERT INTO {role} (rid, name) VALUES (3, 'manager')");
 
-db_query("INSERT INTO {permission} (rid, perm, tid) VALUES (3, 'access comments, post comments, post comments without approval, access content, create page content, delete any page content, delete own page content, edit any page content, edit own page content, access administration pages, administer site configuration, select different theme,create page using wizard,access ckeditor', 0)");
+db_query("INSERT INTO {permission} (rid, perm, tid) VALUES (3, 'access comments, post comments, post comments without approval, access content, create page content, delete any page content, delete own page content, edit any page content, edit own page content, access administration pages, administer site configuration, select different theme,create page using wizard', 0)");
 
 /**block configuration **/
 //hide navigation block
